@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size preview</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <noscript>Hi. Javascript pls</noscript>
+    <header>
+        <input type="number" min="0" name="height" id="height" value="5">
+        &times;
+        <input type="number" min="0" name="width" id="width" value="5">
+        cm
+    </header>
+    <main>
+        <p>Don't zoom. CSS cm don't like that</p>
+        <div id="preview">
+            <div id="width"></div>
+            <div id="area"></div>
+            <div id="height"></div>
+        </div>
+    </main>
+</body>
+</html>
