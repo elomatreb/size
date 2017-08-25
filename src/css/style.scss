@@ -1,0 +1,85 @@
+$primary: #333;
+$secondary: #c3c3c3;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: $primary;
+}
+
+body,
+input {
+    font-family: monospace, monospace;
+}
+
+header,
+main {
+    padding: 1rem;
+}
+
+header {
+    border-bottom: 2px solid $secondary;
+    font-size: 1.5em;
+
+    input {
+        font-size: 1em;
+    }
+}
+
+#preview {
+    display: grid;
+    grid-gap: .75em;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        padding: .5em;
+        background-color: #fff;
+    }
+}
+
+#width-indicator {
+    grid-row: w-indicator;
+    grid-column: w;
+
+    border-left: 2px solid $secondary;
+    border-right: 2px solid $secondary;
+
+    background-image: repeating-linear-gradient(90deg, $secondary, $secondary .5cm, #fff .5cm, #fff 1cm);
+    background-repeat: repeat-x;
+    background-position: 0 center;
+    background-size: 100% 2px;
+}
+
+#area {
+    grid-column: w;
+    grid-row: h;
+
+    border: 5px solid $primary;
+    background: repeating-linear-gradient(45deg, $primary, $primary 2px, #fff 3px, #fff 20px);
+    padding: 5px;
+    background-clip: content-box;
+
+    span {
+        border: 2px solid$primary;
+    }
+}
+
+#height-indicator {
+    grid-row: h;
+
+    border-top: 2px solid $secondary;
+    border-bottom: 2px solid $secondary;
+
+    background-image: repeating-linear-gradient(0deg, $secondary, $secondary .5cm, #fff .5cm, #fff 1cm);
+    background-repeat: repeat-y;
+    background-position: center 0;
+    background-size: 2px 100%;
+}
