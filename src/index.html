@@ -7,19 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <noscript>Hi. Javascript pls</noscript>
     <header>
-        <input type="number" min="0" name="height" id="height" value="5">
+        <input type="number" min="0" name="height" id="height" value="20">
         &times;
-        <input type="number" min="0" name="width" id="width" value="5">
+        <input type="number" min="0" name="width" id="width" value="10">
         cm
     </header>
     <main>
         <p>Don't zoom. CSS cm don't like that</p>
+        <noscript>Hi. Javascript pls</noscript>
         <div id="preview">
-            <div id="width"></div>
-            <div id="area"></div>
-            <div id="height"></div>
+            <div id="width-indicator">
+                <span></span>
+            </div>
+            <div id="area">
+                <span></span>
+            </div>
+            <div id="height-indicator">
+                <span></span>
+            </div>
         </div>
     </main>
 </body>
